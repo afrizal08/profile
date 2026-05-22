@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional | Network Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        /* Custom scrollbar untuk nuansa premium */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-gray-100 font-sans scroll-smooth overflow-x-hidden">
+
+    <!-- GLOW BACKGROUND EFFECT -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-extrabold text-xl tracking-wider text-blue-500 flex items-center gap-2">
+                    <i class="fa-solid fa-terminal text-lg"></i>
+                    <span>EL<span class="text-white">.NET</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm font-semibold">
+                        <a href="#home" class="text-blue-400 hover:text-blue-300 transition">Beranda</a>
+                        <a href="#about" class="text-gray-300 hover:text-white transition">Tentang</a>
+                        <a href="#certifications" class="text-gray-300 hover:text-white transition">Sertifikasi</a>
+                        <a href="#skills" class="text-gray-300 hover:text-white transition">Keahlian</a>
+                        <a href="#experience" class="text-gray-300 hover:text-white transition">Pengalaman</a>
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition shadow-lg shadow-blue-600/20">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-[85vh] flex items-center justify-center px-4 relative">
+        <div class="text-center max-w-3xl z-10">
+            <div class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 px-4 py-1.5 rounded-full text-xs font-bold mb-6 border border-blue-500/20 tracking-wider uppercase">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                <span>Aktif di Industri Telekomunikasi</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 text-white">
+                Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-teal-400">Afrizal</span>
+            </h1>
+            <p class="text-lg sm:text-2xl text-gray-300 font-medium mb-6">
+                Professional <span class="text-blue-400 code-font">Network Engineer </span>
+            </p>
+            <p class="text-gray-400 max-w-xl mx-auto mb-8 text-sm sm:text-base leading-relaxed">
+                Spesialis dalam perancangan infrastruktur jaringan berskala besar, optimasi interkoneksi, routing dinamis BGP/OSPF, serta memastikan performa maksimal dengan zero downtime.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-blue-600/30 transition duration-300 flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                </a>
+                <a href="#certifications" class="border border-gray-700 hover:border-gray-500 text-gray-300 font-semibold px-6 py-3 rounded-lg transition duration-300 flex items-center gap-2">
+                    <i class="fa-solid fa-award"></i> Lihat Sertifikasi
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- TENTANG SAYA & FOTO (TERINTEGRASI SERTIFIKASI MIKROTIK) -->
+    <section id="about" class="py-24 max-w-5xl mx-auto px-4 border-t border-gray-900">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Kolom Foto Profil -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Bingkai Efek Cahaya Neon di belakang foto -->
+                    <div class="absolute -inset-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-red-500 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    
+                    <div class="relative w-72 h-80 rounded-2xl bg-gray-900 border-2 border-gray-700/80 overflow-hidden flex items-center justify-center">
+                        <!-- PETUNJUK: Ganti URL src di bawah ini dengan path foto lokal Anda -->
+                        <img 
+                            src="profile.jpeg" 
+                            alt="Foto Profil Afrizal" 
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                        />
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kolom Teks Deskripsi -->
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-block bg-red-500/10 text-red-400 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">
+                    OVERVIEW PROFESIONAL
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Tentang Saya</h2>
+                <p class="text-gray-400 leading-relaxed text-sm sm:text-base">
+                    Saya adalah seorang <strong class="text-white">Network Engineer</strong> profesional di industri telekomunikasi dengan spesialisasi mendalam pada ekosistem MikroTik. Memegang sertifikasi tingkat tertinggi (<strong class="text-red-400">MTCINE - Expert</strong>), saya berpengalaman dalam merancang, mengoptimalkan, dan mengamankan arsitektur jaringan skala besar yang menuntut reliabilitas tinggi.
+                </p>
+                <p class="text-gray-400 leading-relaxed text-sm sm:text-base">
+                    Fokus utama saya mencakup manajemen *routing* dinamis berbasis BGP/OSPF, implementasi teknologi MPLS, serta rekayasa trafik (*Traffic Engineering*) untuk interkoneksi antar-kota maupun internasional. Saya berkomitmen untuk memastikan performa infrastruktur jaringan berjalan optimal dengan mengedepankan aspek redundansi dan *zero-downtime*.
+                </p>
+                
+                <!-- Quick Info Cards (Disesuaikan dengan Profil Jaringan) -->
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                    <div class="bg-gray-900/60 p-4 rounded-xl border border-gray-800/80">
+                        <span class="text-xs text-gray-500 block mb-1">Keahlian Inti</span>
+                        <span class="text-sm font-semibold text-white">BGP, MPLS, & Core Routing</span>
+                    </div>
+                    <div class="bg-gray-900/60 p-4 rounded-xl border border-gray-800/80">
+                        <span class="text-xs text-gray-500 block mb-1">Kredensial Tertinggi</span>
+                        <span class="text-sm font-semibold text-red-400 code-font">MTCINE #Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- SECTION SERTIFIKASI (MIKROTIK) -->
+    <section id="certifications" class="py-24 bg-gray-900/40 border-t border-b border-gray-900 relative">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-amber-500/10 text-amber-500 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider mb-2">
+                    KREDENSIAL MIKROTIK
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-3">Sertifikasi Profesional</h2>
+                <p class="text-gray-400 text-sm max-w-md mx-auto">Sertifikasi resmi dari MikroTik Latvia yang memvalidasi keahlian saya dalam rekayasa jaringan routing tingkat tinggi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Sertifikasi 1 (MTCINE - Expert) -->
+                <div class="bg-gray-900/80 border border-gray-800 p-6 rounded-2xl flex flex-col justify-between hover:border-red-500/50 transition duration-300 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-red-600 text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 rounded-bl-lg text-white">
+                        Expert Level
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-red-600/10 flex items-center justify-center mb-6 border border-red-500/20">
+                            <i class="fa-solid fa-diagram-project text-2xl text-red-400"></i>
+                        </div>
+                        <h3 class="font-extrabold text-white text-lg tracking-wide group-hover:text-red-400 transition mb-2">MTCINE</h3>
+                        <p class="text-xs text-gray-400 font-medium mb-3">MikroTik Certified Inter-networking Engineer</p>
+                        <p class="text-xs text-gray-500 leading-relaxed mb-6">Validasi kompetensi tertinggi dalam mengelola arsitektur inter-koneksi besar, termasuk protokol BGP (Border Gateway Protocol), MPLS, dan Traffic Engineering (TE).</p>
+                    </div>
+                    <div class="border-t border-gray-800/80 pt-4 flex justify-between items-center text-xs">
+                        <span class="text-gray-500 font-medium">Kredensial ID: <span class="text-gray-400 code-font">MT-INE-2408INE2499</span></span>
+                        <a href="https://mikrotik.com/certificate/2408INE2499" target="_blank" class="text-red-400 hover:underline flex items-center gap-1">Verifikasi <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sertifikasi 2 (MTCRE - Advanced) -->
+                <div class="bg-gray-900/80 border border-gray-800 p-6 rounded-2xl flex flex-col justify-between hover:border-blue-500/50 transition duration-300 group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-600/10 flex items-center justify-center mb-6 border border-blue-500/20">
+                            <i class="fa-solid fa-route text-2xl text-blue-400"></i>
+                        </div>
+                        <h3 class="font-extrabold text-white text-lg tracking-wide group-hover:text-blue-400 transition mb-2">MTCRE</h3>
+                        <p class="text-xs text-gray-400 font-medium mb-3">MikroTik Certified Routing Engineer</p>
+                        <p class="text-xs text-gray-500 leading-relaxed mb-6">Keahlian mendalam dalam perencanaan skenario routing statis maupun dinamis seperti OSPF, manajemen Point-to-Point tunneling (VPN), serta implementasi VLAN lanjutan.</p>
+                    </div>
+                    <div class="border-t border-gray-800/80 pt-4 flex justify-between items-center text-xs">
+                        <span class="text-gray-500 font-medium">Kredensial ID: <span class="text-gray-400 code-font">MT-CRE-2307RE8100</span></span>
+                        <a href="https://mikrotik.com/certificate/2307RE8100" target="_blank" class="text-blue-400 hover:underline flex items-center gap-1">Verifikasi <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sertifikasi 3 (MTCNA - Associate) -->
+                <div class="bg-gray-900/80 border border-gray-800 p-6 rounded-2xl flex flex-col justify-between hover:border-teal-500/50 transition duration-300 group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-teal-600/10 flex items-center justify-center mb-6 border border-teal-500/20">
+                            <i class="fa-solid fa-network-wired text-2xl text-teal-400"></i>
+                        </div>
+                        <h3 class="font-extrabold text-white text-lg tracking-wide group-hover:text-teal-400 transition mb-2">MTCNA</h3>
+                        <p class="text-xs text-gray-400 font-medium mb-3">MikroTik Certified Network Associate</p>
+                        <p class="text-xs text-gray-500 leading-relaxed mb-6">Fondasi utama ekosistem RouterOS, mencakup manajemen bandwidth (Queues), firewall filter, network address translation (NAT), serta konfigurasi dasar wireless network.</p>
+                    </div>
+                    <div class="border-t border-gray-800/80 pt-4 flex justify-between items-center text-xs">
+                        <span class="text-gray-500 font-medium">Kredensial ID: <span class="text-gray-400 code-font">MT-CNA-2305NA2257</span></span>
+                        <a href="https://mikrotik.com/certificate/2305NA2257" target="_blank" class="text-teal-400 hover:underline flex items-center gap-1">Verifikasi <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- KEAHLIAN (SKILLS) BERDASARKAN SERTIFIKASI MIKROTIK -->
+    <section id="skills" class="py-24 max-w-5xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <div class="inline-block bg-blue-500/10 text-blue-400 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider mb-2">
+                KEAHLIAN TEKNIS
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">Keahlian & Kompetensi</h2>
+            <p class="text-gray-400 text-sm">Pemetaan keahlian infrastruktur jaringan yang diselaraskan dengan kredensial resmi.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Kelompok 1: Core & Inter-networking (MTCINE Level) -->
+            <div class="bg-gray-900/40 border border-gray-800/80 p-6 rounded-2xl relative before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-red-500 before:rounded-t-2xl">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-diagram-project text-red-500 text-sm"></i> Core & Inter-Networking
+                </h3>
+                <div class="space-y-5">
+                    <!-- Skill 1 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">BGP (Border Gateway Protocol)</span>
+                            <span class="text-red-400 font-semibold code-font">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-red-500 h-full rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">MPLS (LDP, VPLS, L3VPN)</span>
+                            <span class="text-red-400 font-semibold code-font">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-red-500 h-full rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">Traffic Engineering (TE)</span>
+                            <span class="text-red-400 font-semibold code-font">88%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-red-500 h-full rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-[11px] text-gray-600 mt-6 pt-4 border-t border-gray-800/60 code-font">
+                    Validated by MTCINE #Expert
+                </div>
+            </div>
+
+            <!-- Kelompok 2: Advanced Routing & Tunneling (MTCRE Level) -->
+            <div class="bg-gray-900/40 border border-gray-800/80 p-6 rounded-2xl relative before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-blue-500 before:rounded-t-2xl">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-route text-blue-500 text-sm"></i> Advanced Routing
+                </h3>
+                <div class="space-y-5">
+                    <!-- Skill 1 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">OSPF (Single & Multi-Area)</span>
+                            <span class="text-blue-400 font-semibold code-font">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">Policy Forwarding & PBR</span>
+                            <span class="text-blue-400 font-semibold code-font">92%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full rounded-full" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">VPN Tunneling (EoIP, PPTP, L2TP)</span>
+                            <span class="text-blue-400 font-semibold code-font">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-[11px] text-gray-600 mt-6 pt-4 border-t border-gray-800/60 code-font">
+                    Validated by MTCRE #Advanced
+                </div>
+            </div>
+
+            <!-- Kelompok 3: Network Administration & Security (MTCNA Level) -->
+            <div class="bg-gray-900/40 border border-gray-800/80 p-6 rounded-2xl relative before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-teal-500 before:rounded-t-2xl">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-network-wired text-teal-500 text-sm"></i> Network Essentials
+                </h3>
+                <div class="space-y-5">
+                    <!-- Skill 1 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">Bandwidth Management (Queues)</span>
+                            <span class="text-teal-400 font-semibold code-font">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-teal-500 h-full rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">Firewall Filter, NAT, & Mangle</span>
+                            <span class="text-teal-400 font-semibold code-font">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-teal-500 h-full rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-gray-400 font-medium">DHCP, DNS, & Bridge Infrastructure</span>
+                            <span class="text-teal-400 font-semibold code-font">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-teal-500 h-full rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-[11px] text-gray-600 mt-6 pt-4 border-t border-gray-800/60 code-font">
+                    Validated by MTCNA #Associate
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PENGALAMAN & PROYEK (TIMELINE) -->
+    <section id="experience" class="py-24 bg-gray-900/20 border-t border-gray-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-amber-500/10 text-amber-400 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider mb-2">
+                    REKAM JEJAK
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">Pengalaman Kerja</h2>
+                <p class="text-gray-400 text-sm">Perjalanan karier di dunia infrastruktur jaringan telekomunikasi.</p>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-gray-800">
+                
+                <!-- Kerja 1 -->
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#0b0f19] -translate-x-1.5 md:-translate-x-2 z-10 transition group-hover:scale-125"></div>
+                    <div class="w-full md:w-[45%] pl-10 md:pl-0 md:text-right mt-1 md:mt-0">
+                        <span class="text-xs font-bold text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full uppercase tracking-wider">Maret 2024 - Sekarang</span>
+                        <h3 class="text-lg font-bold text-white mt-3">Network Engineer (Core Network)</h3>
+                        <p class="text-sm text-gray-400">Perusahaan Telekomunikasi Nasional</p>
+                    </div>
+                    <div class="w-full md:w-[45%] pl-10 md:pl-0 bg-gray-900/60 p-5 rounded-2xl border border-gray-800/80 mt-3 md:mt-0 shadow-sm">
+                        <ul class="list-disc list-inside text-sm text-gray-400 space-y-2">
+                            <li>Mengkonfigurasi dan melakukan audit rutin protokol BGP untuk IP Transit internasional.</li>
+                            <li>Mengurangi kegagalan sistem interkoneksi hingga 15% melalui otomatisasi monitoring.</li>
+                            <li>Menyediakan penanganan insiden prioritas tinggi (High Severity) guna memastikan tercapainya SLA 99.9%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kerja 2 -->
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-gray-700 border-4 border-[#0b0f19] -translate-x-1.5 md:-translate-x-2 z-10 transition group-hover:scale-125"></div>
+                    <div class="w-full md:w-[45%] pl-10 md:pl-0 md:text-right mt-1 md:mt-0">
+                        <span class="text-xs font-bold text-gray-400 bg-gray-700/30 px-3 py-1 rounded-full uppercase tracking-wider">Januari 2022 - Februari 2024</span>
+                        <h3 class="text-lg font-bold text-white mt-3">Junior Network Support</h3>
+                        <p class="text-sm text-gray-400">Internet Service Provider (ISP) Lokal</p>
+                    </div>
+                    <div class="w-full md:w-[45%] pl-10 md:pl-0 bg-gray-900/60 p-5 rounded-2xl border border-gray-800/80 mt-3 md:mt-0 shadow-sm">
+                        <ul class="list-disc list-inside text-sm text-gray-400 space-y-2">
+                            <li>Membantu setup perangkat baru (Switches/Routers) untuk pelanggan segmen korporat.</li>
+                            <li>Melakukan troubleshooting layer-2 dan layer-3 pada infrastruktur last-mile serat optik.</li>
+                            <li>Melakukan monitoring bandwidth dan ketersediaan link harian menggunakan sistem Cacti & Zabbix.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- KONTAK -->
+    <section id="contact" class="py-24 bg-gradient-to-t from-black to-[#0b0f19] border-t border-gray-900">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Mari Berkolaborasi</h2>
+            <p class="text-gray-400 text-sm sm:text-base mb-10 max-w-lg mx-auto leading-relaxed">
+                Butuh saran instalasi infrastruktur jaringan telekomunikasi, otomatisasi sistem, atau optimasi BGP/MPLS routing? Hubungi saya kapan saja melalui kontak di bawah ini.
+            </p>
+            
+            <!-- Grid Kontak Utama -->
+            <div class="flex flex-wrap justify-center gap-4 text-sm mb-8">
+                <!-- WhatsApp Button (Menonjol dengan aksen hijau) -->
+                <a href="https://wa.me/6285288783286?text=Halo%20Afrizal,%20saya%20tertarik%20untuk%20berdiskusi%20mengenai%20proyek%20jaringan." 
+                   target="_blank" 
+                   class="flex items-center gap-3 bg-emerald-600/10 border border-emerald-500/30 px-6 py-3 rounded-xl hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition duration-300 group shadow-lg shadow-emerald-600/5">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 group-hover:text-white text-lg transition"></i> 
+                    <span class="font-semibold text-emerald-400 group-hover:text-white transition">0852-8878-3286</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:afrizal@yourdomain.com" class="flex items-center gap-3 bg-gray-900/80 border border-gray-800 px-6 py-3 rounded-xl hover:border-blue-500 hover:text-white transition duration-300 group">
+                    <i class="fa-solid fa-envelope text-blue-400 group-hover:scale-110 transition"></i> 
+                    <span>afrizaleko08@gmail.com</span>
+                </a>
+            </div>
+
+            <!-- Sosial Media Lainnya -->
+            <div class="flex justify-center gap-6 text-sm text-gray-500">
+                <a href="https://linkedin.com/in/username" target="_blank" class="hover:text-white flex items-center gap-1.5 transition">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/username" target="_blank" class="hover:text-white flex items-center gap-1.5 transition">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center text-xs text-gray-600 border-t border-gray-950 bg-black">
+        <p>&copy; 2026 Afrizal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
